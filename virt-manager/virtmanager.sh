@@ -1,14 +1,7 @@
 #!/bin/bash
 
-sudo apt install virt-manager qemu libvirt0 qemu-kvm -y
-
-
-
-
-
-#thats the base install, now the virtual routing
-
-sudo apt install ebtables dnsmasq bridge-utils -y
+sudo apt install virt-manager qemu libvirt0 qemu-kvm ebtables dnsmasq bridge-utils -y
+#sudo pacman -S virt-manager qemu libvirt ebtables dnsmasq bridge-utils
 
 sudo gpasswd -a $USER libvirt
 
