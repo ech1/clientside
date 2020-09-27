@@ -3,9 +3,7 @@
 sudo apt install virt-manager qemu libvirt0 qemu-kvm -y
 
 
-sudo systemctl start libvirtd
-sudo systemctl enable libvirtd
-sudo systemctl status libvirtd
+
 
 
 #thats the base install, now the virtual routing
@@ -16,3 +14,6 @@ sudo gpasswd -a $USER libvirt
 
 #then open up virtmanager, and create ur qemu kvm as usual, but dont forget to create the NAT beforehand
 
+sudo systemctl start libvirtd
+sudo systemctl enable libvirtd
+sudo systemctl status libvirtd
